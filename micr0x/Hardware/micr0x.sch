@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25086,12 +25086,6 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <label x="104.14" y="92.71" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="CLK"/>
-<wire x1="97.79" y1="283.21" x2="100.33" y2="283.21" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="!CLR"/>
@@ -26681,6 +26675,18 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <wire x1="477.52" y1="297.18" x2="480.06" y2="297.18" width="0.1524" layer="91"/>
 <wire x1="477.52" y1="294.64" x2="477.52" y2="297.18" width="0.1524" layer="91"/>
 <junction x="477.52" y="297.18"/>
+</segment>
+</net>
+<net name="NOTE_LATCH" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="PE2_[OC1B]"/>
+<wire x1="132.08" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<label x="139.7" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="CLK"/>
+<wire x1="97.79" y1="283.21" x2="110.49" y2="283.21" width="0.1524" layer="91"/>
+<label x="100.33" y="283.21" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
